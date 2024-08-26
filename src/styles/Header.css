@@ -1,0 +1,50 @@
+.Navbar-list{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.Navbar-list ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.Navbar-list ul li{
+  padding: 20px;
+  transition: all ease 1s;
+}
+
+.Navbar-list ul li :hover{
+  padding: 20px;
+  background-color: #eeeeee;
+  border-radius: 16px;
+}
+
+.Navbar-list ul li a{
+  color: black;
+  font-weight: 600;
+}
+
+@media (max-width: 860px) {
+    .Navbar-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .Navbar-list ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .Navbar-list ul li{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        transition: all ease 1s;
+      }
+}

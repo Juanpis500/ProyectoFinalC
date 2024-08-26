@@ -1,7 +1,8 @@
 import { useState } from "react";
+import '../styles/Header.css';
 
 export default function Navabar(){
-    const[ data] = useState([{
+    const[data] = useState([{
         name:"HOME",
         url:""
     },
@@ -28,7 +29,7 @@ export default function Navabar(){
 
     const itemnav = data.map((inf)=>{
         return(
-            <li>
+            <li className="Navbar-listitem">
                 <a href={inf.url}>{inf.name}</a>
             </li>
         )

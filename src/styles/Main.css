@@ -1,0 +1,89 @@
+.prin-content{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-evenly;
+    background-color: rgb(73, 94, 87);
+}
+
+.prin-content section{
+    margin-left : 100px;
+
+}
+
+.prin-content img{
+    margin-right: 70px;
+}
+
+.prin-content section h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #F4CE14;
+    font-size: 48px;
+    margin-top: 30px;
+    font-weight: 700;
+}
+
+.prin-content section h4{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -35px;
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.prin-content section p{
+    color: white;
+    font-size: 20px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.reserve-button{
+    background-color: #F4CE14;
+    color: black;
+    padding: 12px;
+    border-radius: 16px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.reserve-button:hover{
+    background-color: #d6b719;
+}
+
+.main-img{
+    border-radius: 16px;
+    width: 17%;
+    transform: translateY(40px);
+    margin-left: 20px;
+}
+.special-content{
+    margin-top: 60px;
+}
+
+.special-tittle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 30px;
+}
+
+.special-tittle h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+.special-tittle a{
+    padding: 15px;
+    padding-inline: 20px;
+    background-color: #F4CE14;
+    font-weight: bold;
+    color: black;
+    border-radius: 16px;
+    font-size: 16px;
+}
+
+
+
+

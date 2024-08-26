@@ -1,0 +1,34 @@
+.cont-prin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 200px;
+    margin-left: 26%;
+}
+
+.cont-prin div{
+    background-color: grey;
+    flex-basis: 100%;
+    flex: 1;
+    border-radius: 16px;
+    margin-right: 10%;
+}
+
+.cont-prin div img {
+    border-radius: 16px 16px 0 0;
+    width: 300px;
+    height: 200px;
+}
+
+.cont-prin div div{
+    padding: 10px;
+}
+
+.cont-prin div div div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
