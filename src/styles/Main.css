@@ -92,6 +92,13 @@
     background-color: rgb(132, 167, 155);
 }
 
+.about-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 25%;
+}
+
 
 
 

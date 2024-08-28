@@ -3,6 +3,7 @@ import restaurant from "../assets/images/restauranfood.jpg"
 import "../styles/Main.css"
 import Speacials from "./Specials";
 import Testimonials from "./Testimonials";
+import About from "./About";
 
 export default function Main(){
 
@@ -37,15 +38,7 @@ export default function Main(){
                 <Testimonials></Testimonials>
             </section>
             <section className="about-content">
-                <div>
-                    <h1>{tittle}</h1>
-                    <h4>{subtitle}</h4>
-                    <p></p>
-                </div>
-                <div>
-                    <img/>
-                    <img/>
-                </div>
+                <About></About>
             </section>
         </main>
     )

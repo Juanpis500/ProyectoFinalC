@@ -1,0 +1,10 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(73, 94, 87);
+}
+
+footer img{
+    width: 200px;
+}
