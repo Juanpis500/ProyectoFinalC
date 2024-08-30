@@ -4,12 +4,13 @@ import "../styles/Main.css"
 import Speacials from "./Specials";
 import Testimonials from "./Testimonials";
 import About from "./About";
+import { Link } from "react-router-dom";
 
 export default function Main(){
 
     const tittle = "Little Lemon";
     const subtitle = "Chicago";
-    const url = "";
+    const url = "/reserve-online";
 
     return(
         <main>
@@ -18,7 +19,7 @@ export default function Main(){
                     <h1>{tittle}</h1>
                     <h4>{subtitle}</h4>
                     <p>We are a family owned <br /> Mediterranean restaurant, <br /> focused on traditional <br /> recipes served with a modern <br /> twist</p>
-                    <a href={url}  className="reserve-button">Reserve a Table</a>
+                    <Link  to={url}  className="reserve-button">Reserve a Table</Link>
                 </section>
                 <img
                     className="main-img"
@@ -37,7 +38,7 @@ export default function Main(){
                 <h1>Testimonials</h1>
                 <Testimonials></Testimonials>
             </section>
-            <section className="about-content">
+            <section>
                 <About></About>
             </section>
         </main>

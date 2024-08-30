@@ -1,0 +1,27 @@
+.testimonials-content-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding-block: 30px;
+
+}
+
+.testimonials-content-items > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    margin-right: 5px;
+    width: 250px;
+    height: 170px;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+.testimonials-content-items > div > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}   

@@ -1,5 +1,5 @@
 import "../styles/Footer.css"
-import logo from "../assets/images/logo_footer.png"
+import logo from "../assets/images/logo_footer_sin.png"
 
 export default function Footer(){
     return(
@@ -8,7 +8,7 @@ export default function Footer(){
                 alt="Logo Footer"/>
             <div>
                 <p>
-                    Doormat Navigation <br />
+                    Doormat Navigation <br /> <br /><br />
                     Home <br />
                     About
                     Menu <br />

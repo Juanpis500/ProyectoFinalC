@@ -32,7 +32,7 @@ export default function Speacials(){
                     alt="this is a image of food"
                     width="300px"
                 />
-                <div>
+                <div className="secondary-especial-content">
                     <div>
                         <h1>{dat.name}</h1>
                         <p>{dat.price}</p>
