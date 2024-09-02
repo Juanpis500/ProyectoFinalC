@@ -1,0 +1,70 @@
+.form-reservation{
+    margin-inline: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-reservation > div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows:auto;
+    align-items: center;
+    padding-block: 20px;
+}
+
+.form-reservation > div > select{
+    width: 60%;
+    padding: 10px;
+    margin-left: 40%;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #EDEFEE;
+    border-color: rgba(0, 0, 0, 0.1);
+    font-family: "Karla", sans-serif;
+    font-size: 15px;
+}
+
+.form-reservation > div > input{
+    padding: 5px;
+    border-radius: 5px;
+    width: 60%;
+    margin-left: 35%;
+    text-align: center;
+    background-color: #EDEFEE;
+    border-color: rgba(0, 0, 0, 0.1);
+    font-family: "Karla", sans-serif;
+    font-size: 15px;
+}
+
+.form-reservation > input{
+    padding: 12px;
+    align-self: center;
+    background-color: #F4CE14;
+    width: 90%;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20%;
+}
+
+.form-reservation > input:hover{
+    background-color: #EE9972;
+    color: white;
+    
+}
+
+.form-reservation > fieldset{
+    margin-top: 10px;
+    border-color: #EDEFEE;
+    border-radius: 5px;
+}
+
+.form-reservation > h1{
+    font-size: 32px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 50px;
+}

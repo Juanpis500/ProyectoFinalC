@@ -1,0 +1,37 @@
+.form-reservation3 > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30%;
+}
+
+.form-reservation3 > div > p{
+    margin: 0px;
+    padding: 0px;
+    padding-block: 2px;
+}
+
+.form-reservation3 > div > h4{
+    margin: 0px;
+    padding: 0px;
+    padding-block: 5px;
+}
+
+.reserv3-second-p{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.button-finish{
+    padding: 12px;
+    align-self: center;
+    background-color: #F4CE14;
+    width: 70%;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5%;
+}
