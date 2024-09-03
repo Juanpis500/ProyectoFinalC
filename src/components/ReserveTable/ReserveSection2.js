@@ -15,11 +15,11 @@ export default function ReserveSection2(props){
             <h1>Confirm your data</h1>
             <div>
                 <label for="set-name">Full Name: </label>
-                <input id="set-name" value={name} onChange={e => setName(e.target.value)}/>
+                <input id="set-name" value={name} onChange={e => setName(e.target.value)} required/>
             </div>
             <div>
                 <label for="set-name">Email: </label>
-                <input id="set-email" type="email" value={email} onChange={e => setEmail(e.target.value)}/>
+                <input id="set-email" type="email" value={email} onChange={e => setEmail(e.target.value)} required/>
             </div>
             <div className="information-content">
                 <h4>Data:</h4>

@@ -3,7 +3,11 @@ import ReserveSection2 from "./ReserveSection2";
 import ReserveSection3 from "./ReserveSection3";
 import restaurant from "../../assets/images/restaurant.jpg"
 import "../../styles/Reservation.css";
-import { useState } from "react";
+import { useReducer, useState } from "react";
+
+function updateTimes(){
+
+}
 
 
 export default function ReserveHome(){
@@ -17,6 +21,11 @@ export default function ReserveHome(){
     const [occasion, setOccasion] = useState("None");
     const [bandBtn1, setBandBtn1] = useState(false);
     const [bandBtn2, setBandBtn2] = useState(false);
+
+    const initialTime = ["17:00","18:00","19:00","20:00","21:00","22:00"]
+
+
+    const[aviableTimes, dispatch] = useReducer(updateTimes,initialTime);
 
     return(
         <main className="reservation-content">
@@ -42,7 +51,8 @@ export default function ReserveHome(){
                     occasion={occasion}
                     setOccasion={setOccasion}
                     bandBtn1={bandBtn1}
-                    setBandBtn1={setBandBtn1}/>
+                    setBandBtn1={setBandBtn1}
+                    aviableTimes={aviableTimes}/>
                 }
                 {bandBtn1 === true && bandBtn2 === false &&
                     <ReserveSection2

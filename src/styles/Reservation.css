@@ -33,4 +33,28 @@
     padding-bottom: 5%;
 }
 
+@media (max-width: 1500px) {
+    .reservation-content{
+        margin-inline: 10%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .reservation-content{
+        margin-inline: 5%;
+    }
+}
+
+@media (max-width: 920px) {
+    .reservation-content{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows:auto;
+        margin-inline: 3%;
+        padding: 10px;
+    }
+    .reservation-content > section:first-child{
+        border: none;
+    }
+}
 

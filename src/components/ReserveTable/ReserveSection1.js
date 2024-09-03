@@ -7,7 +7,12 @@ export default function ReserveSection1(props){
         e.preventDefault();
         props.setBandBtn1(true);
     }
-
+    
+    const itemsTime = props.aviableTimes.map( (e)=> {
+        return(
+            <option>{e}</option>
+        )
+    })
 
     return(
         <form className="form-reservation" onSubmit={handleSubmit}>
@@ -38,12 +43,7 @@ export default function ReserveSection1(props){
                     value={props.time}
                     onChange={e => props.setTime(e.target.value)}
                     >
-                    <option>17:00</option>
-                    <option>18:00</option>
-                    <option>19:00</option>
-                    <option>20:00</option>
-                    <option>21:00</option>
-                    <option>22:00</option>
+                    {itemsTime}
                 </select>
             </div>
             <fieldset>
@@ -76,7 +76,7 @@ export default function ReserveSection1(props){
                     <label for="occasion3">None</label>
                 </div>
             </fieldset>
-
+            
             <input type="submit" value="Continue"/>
         </form>
     )
