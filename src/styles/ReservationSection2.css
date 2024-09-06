@@ -74,4 +74,13 @@
     margin: 0px; padding: 0px;
 }
 
+@media (max-width: 920px) {
+    .form-reservation2 > div > div {
+        margin-left: 0%;
+    }
+    .form-reservation2 > img{
+        width: 10%;
+    }
+}
+
 

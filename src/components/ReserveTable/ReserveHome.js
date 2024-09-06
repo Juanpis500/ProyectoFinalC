@@ -5,7 +5,37 @@ import restaurant from "../../assets/images/restaurant.jpg"
 import "../../styles/Reservation.css";
 import { useReducer, useState } from "react";
 
-function updateTimes(){
+function updateTimes(aviableTimes, action){
+    if(action.type === 'update-time'){
+        const cadenanumbers = [];
+        const temp = [];
+        var maxnum = Math.floor(Math.random() * (10 - 5 + 1) ) + 5;
+        console.log(maxnum)
+        for (var i = 0; i<maxnum; i++){
+            var random = Math.floor(Math.random() * (22 - 12 + 1) ) + 12;
+            var band = false;
+            while(!band){
+                if(cadenanumbers.includes(random)){
+                    random = Math.floor(Math.random() * (22 - 12 + 1) ) + 12;
+                }
+                else{
+                    cadenanumbers.push(random);
+                    band = true;
+                }
+            }
+        }
+
+        cadenanumbers.sort();
+        console.log(cadenanumbers)
+        for( i=0; i<cadenanumbers.length; i++){
+            
+            temp.push(cadenanumbers[i] + ":00");
+            
+        }
+        console.log(temp)
+        
+        return(temp);
+    }
 
 }
 
@@ -52,7 +82,8 @@ export default function ReserveHome(){
                     setOccasion={setOccasion}
                     bandBtn1={bandBtn1}
                     setBandBtn1={setBandBtn1}
-                    aviableTimes={aviableTimes}/>
+                    aviableTimes={aviableTimes}
+                    dispatch={dispatch}/>
                 }
                 {bandBtn1 === true && bandBtn2 === false &&
                     <ReserveSection2

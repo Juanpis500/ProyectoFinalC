@@ -1,5 +1,6 @@
 import { useState } from "react"
 import "../../styles/ReservationSection2.css"
+import regresar from "../../assets/images/izquierda.png"
 
 export default function ReserveSection2(props){
     const [name, setName] = useState("");
@@ -12,14 +13,15 @@ export default function ReserveSection2(props){
     
     return(
         <form className="form-reservation2" onSubmit={handleSubmit}>
+            <img src={regresar} alt="regresar" width="7%" onClick={e=>{props.setBandBtn1(false)}}/>
             <h1>Confirm your data</h1>
             <div>
                 <label for="set-name">Full Name: </label>
-                <input id="set-name" value={name} onChange={e => setName(e.target.value)} required/>
+                <input id="set-name" value={name} onChange={e => setName(e.target.value)} required placeholder="Juan Antonio Rosales"/>
             </div>
             <div>
                 <label for="set-name">Email: </label>
-                <input id="set-email" type="email" value={email} onChange={e => setEmail(e.target.value)} required/>
+                <input id="set-email" type="email" value={email} onChange={e => setEmail(e.target.value)} required placeholder="juan12antonio@gmail.com"/>
             </div>
             <div className="information-content">
                 <h4>Data:</h4>

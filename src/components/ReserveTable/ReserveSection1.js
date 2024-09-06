@@ -35,7 +35,7 @@ export default function ReserveSection1(props){
             </div>
             <div>
                 <label for="set-date">Set Date: </label>
-                <input type="date" id="set-date" value={props.date} onChange={e => props.setDate(e.target.value)} required/>
+                <input type="date" id="set-date" value={props.date} onChange={e => {props.setDate(e.target.value); props.dispatch({type: 'update-time'})}} required/>
             </div>
             <div>
                 <label for="set-time">Choose time: </label>

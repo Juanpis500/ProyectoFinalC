@@ -25,3 +25,30 @@
     flex-direction: row;
     align-items: center;
 }   
+
+
+@media (max-width: 1200px) {
+    .testimonials-content-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows:auto;
+        margin-bottom: 50px;
+        padding-block: 0px;
+    }
+
+    .testimonials-content-items > div{
+        margin-bottom: 10px;
+
+    }
+    
+}
+
+@media (max-width: 680px) {
+    .testimonials-content-items {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows:auto;
+        margin-bottom: 50px;
+        padding-block: 0px;
+    }
+}

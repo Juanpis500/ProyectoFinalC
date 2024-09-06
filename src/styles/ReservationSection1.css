@@ -68,3 +68,15 @@
     font-weight: 500;
     margin-bottom: 50px;
 }
+
+@media (max-width: 1200px) {
+    .form-reservation > div > select{
+        width: 80%;
+        margin-left: 20%;
+    }
+
+    .form-reservation > div > input{
+        width: 80%;
+        margin-left: 15%;
+    }
+}

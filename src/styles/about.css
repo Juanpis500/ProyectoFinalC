@@ -48,12 +48,15 @@
     }
     .about-img > img{
         width: 30%;
+        align-self: center;
     }
     .about-img{
         align-items: center;
+        padding-left: 25%;
     }
     
     .imagen-2{
         transform: translate(0px, 0px);
+
     }
 }

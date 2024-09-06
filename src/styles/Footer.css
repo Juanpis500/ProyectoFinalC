@@ -1,9 +1,9 @@
 footer{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
-    justify-content: space-between;
-    background-color: #EE9972; 
+    grid-auto-rows:auto;
+    background-color: #EE9972;
     height: 350px;
     padding: 10px;
     padding-inline: 20%;
@@ -15,4 +15,44 @@ footer img{
 
 footer p{
     color: black;
+}
+
+@media (max-width: 1200px) {
+    footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        grid-auto-rows:auto;
+        background-color: #EE9972;
+        padding: 10px;
+        height: 100%;
+    }
+
+    footer img{
+        transform: scale(0.5);
+    }
+
+    footer p{
+        text-align: center;
+    }
+}
+
+@media (max-width: 920px) {
+    footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        grid-auto-rows:auto;
+        background-color: #EE9972;
+        padding: 10px;
+        height: 100%;
+    }
+
+    footer img{
+        transform: scale(0.4);
+    }
+
+    footer p{
+        text-align: center;
+    }
 }
