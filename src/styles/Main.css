@@ -11,6 +11,11 @@
     width: 70%;
     align-self: center;
     margin-left: 32%;
+    transition: transform 1s;
+}
+
+.prin-content > img:hover{
+    transform: scale(10px);
 }
 
 .prin-content section h1{

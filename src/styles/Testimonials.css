@@ -5,7 +5,15 @@
     justify-content: space-between;
     margin-bottom: 50px;
     padding-block: 30px;
+    transition: 1s all ease-in;
+}
 
+.testimonials-content-items > div:hover {
+    transform: translateY(-10px);
+    box-shadow: 5px 6px 0px 1px rgba(0,0,0,0.29);
+    -webkit-box-shadow: 5px 6px 0px 1px rgba(0,0,0,0.29);
+    -moz-box-shadow: 5px 6px 0px 1px rgba(0,0,0,0.29);
+    
 }
 
 .testimonials-content-items > div{
